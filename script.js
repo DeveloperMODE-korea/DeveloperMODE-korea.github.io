@@ -38,10 +38,10 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Intersection Observer for animations
+// Intersection Observer for animations with better timing
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.2, // Increased threshold for earlier trigger
+    rootMargin: '0px 0px -100px 0px' // More margin for better visibility
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -53,17 +53,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
-document.addEventListener('DOMContentLoaded', function() {
-    const animateElements = document.querySelectorAll('.skill-category, .project-card, .timeline-item, .contact-item, .stat');
-    
-    animateElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-});
+// Observer elements for animation - moved to window load event
 
 // Typing animation for hero title
 function typeWriter(element, text, speed = 50) {
@@ -99,18 +89,34 @@ function animateCounter(element, target, duration = 2000) {
     updateCounter();
 }
 
-// Initialize animations when page loads
+// Initialize animations when page loads with staggered effect
 window.addEventListener('load', function() {
+    // Staggered animation for better visibility
+    const animateElements = document.querySelectorAll('.skill-category, .project-card, .timeline-item, .contact-item, .stat');
+    
+    animateElements.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = `opacity 0.8s ease ${index * 0.1}s, transform 0.8s ease ${index * 0.1}s`;
+        observer.observe(el);
+    });
+
     // Animate stats when they come into view
     const statObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const number = entry.target.querySelector('.stat-number');
                 const target = parseInt(number.textContent);
-                animateCounter(number, target);
+                // Add delay to ensure visibility
+                setTimeout(() => {
+                    animateCounter(number, target);
+                }, 300);
                 statObserver.unobserve(entry.target);
             }
         });
+    }, {
+        threshold: 0.3,
+        rootMargin: '0px 0px -50px 0px'
     });
 
     document.querySelectorAll('.stat').forEach(stat => {
@@ -123,10 +129,15 @@ window.addEventListener('load', function() {
             if (entry.isIntersecting) {
                 const number = entry.target.querySelector('.result-number');
                 const target = parseInt(number.textContent);
-                animateCounter(number, target);
+                setTimeout(() => {
+                    animateCounter(number, target);
+                }, 300);
                 resultObserver.unobserve(entry.target);
             }
         });
+    }, {
+        threshold: 0.3,
+        rootMargin: '0px 0px -50px 0px'
     });
 
     document.querySelectorAll('.result-item').forEach(result => {
@@ -134,13 +145,15 @@ window.addEventListener('load', function() {
     });
 });
 
-// Parallax effect for hero section
+// Parallax effect for hero section only
 window.addEventListener('scroll', function() {
     const scrolled = window.pageYOffset;
     const parallax = document.querySelector('.hero');
-    const speed = scrolled * 0.5;
+    const heroHeight = parallax ? parallax.offsetHeight : 0;
     
-    if (parallax) {
+    // Only apply parallax to hero section when it's visible
+    if (parallax && scrolled < heroHeight) {
+        const speed = scrolled * 0.3; // Reduced speed for smoother effect
         parallax.style.transform = `translateY(${speed}px)`;
     }
 });

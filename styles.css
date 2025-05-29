@@ -251,6 +251,13 @@ body {
 /* Section Styles */
 section {
     padding: 100px 0;
+    position: relative;
+    z-index: 5;
+}
+
+/* Ensure sections don't overlap */
+section:not(.hero) {
+    background-attachment: local;
 }
 
 .section-title {
@@ -277,6 +284,14 @@ section {
 /* About Section */
 .about {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    position: relative;
+    z-index: 10;
+    padding: 120px 0; /* Increased padding for better visibility */
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
 }
 
 .about-description {
@@ -286,6 +301,9 @@ section {
     max-width: 800px;
     margin: 0 auto 3rem;
     line-height: 1.8;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
 }
 
 .about-stats {
