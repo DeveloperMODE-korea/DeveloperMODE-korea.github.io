@@ -781,6 +781,15 @@ section:not(.hero) {
     color: #b3b3b3;
 }
 
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-link:hover {
+    color: inherit;
+}
+
 /* Footer */
 .footer {
     background: #0a0a0a;
