@@ -237,12 +237,126 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
+    </section>    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Project</h2>
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Financial Terminal Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">🏦 Python 기반 금융 터미널 프로젝트</h3>
+                    <div class="project-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">PyQt5</span>
+                        <span class="badge">FinTech</span>
+                        <span class="badge">Real-time</span>
+                        <span class="badge private-badge">Private</span>
+                    </div>
+                </div>
+                
+                <div class="project-meta">
+                    <span class="project-period">📅 2025년 4월 ~ 현재 진행중</span>
+                    <span class="project-team">👤 단독개발 (1인)</span>
+                </div>
+                
+                <p class="project-description">
+                    Bloomberg Terminal의 고비용 문제를 해결하기 위한 미니 금융 터미널 개발. 
+                    실시간 주식 데이터, 경제 지표, 옵션 분석 등 다양한 금융 정보를 통합 제공하는 데스크톱 애플리케이션입니다.
+                </p>
+                
+                <div class="project-features">
+                    <h4>✨ 주요 기능</h4>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>실시간 주식 모니터링</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>경제 캘린더</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>금융 지표 대시보드</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-building"></i>
+                            <span>기업 분석</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-coins"></i>
+                            <span>옵션 데이터</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>초보자 가이드</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech">
+                    <h4>🛠️ 기술 스택</h4>
+                    <div class="tech-categories">
+                        <div class="tech-category-item">
+                            <strong>Frontend & UI:</strong> PyQt5, PyQtWebEngine, Matplotlib
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>Data Processing:</strong> Pandas, NumPy
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>Web Crawling:</strong> Playwright, Requests, BeautifulSoup4
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>Financial APIs:</strong> yfinance, fredapi, Fear-and-Greed API
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-challenges">
+                    <h4>🔧 주요 기술적 도전과 해결책</h4>
+                    <div class="challenge-list">
+                        <div class="challenge-item">
+                            <div class="challenge-title">📊 yfinance 데이터와 TradingView 위젯 연동</div>
+                            <div class="challenge-solution">PyQt5 멀티스레딩과 경량화된 차트 라이브러리 통합으로 UI 블로킹 방지</div>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-title">💰 버핏지수 계산 (FRED API 데이터 제거 대응)</div>
+                            <div class="challenge-solution">Google Finance 웹 크롤링과 다중 데이터 소스 전략으로 대체</div>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-title">📅 경제 캘린더 실시간 크롤링</div>
+                            <div class="challenge-solution">Playwright 동적 크롤링과 견고한 HTML 파싱 전략 구현</div>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-title">💾 API 호출 비용 최적화</div>
+                            <div class="challenge-solution">계층적 캐시 시스템과 스마트 캐시 전략으로 성능 향상</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-achievements">
+                    <h4>🎯 성과 및 특징</h4>
+                    <ul>
+                        <li>🔄 멀티스레딩 구조로 비동기 처리 및 UI 반응성 확보</li>
+                        <li>💾 데이터 캐싱으로 API 호출 최적화 (최대 80% 응답 시간 단축)</li>
+                        <li>⏱️ 실시간 업데이트와 사용자 정의 갱신 주기</li>
+                        <li>🌐 한글/영어 다국어 지원 및 지역화</li>
+                        <li>🎨 Bloomberg 스타일 다크 테마와 직관적 UI</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <div class="btn-secondary private-project">
+                        <i class="fas fa-lock"></i> 비공개 프로젝트
+                    </div>
+                    <div class="btn-secondary demo-available">
+                        <i class="fas fa-desktop"></i> 데모 가능
+                    </div>
+                </div>
+            </div>
+
+            <!-- Honeypot Project -->
             <div class="project-card">
                 <div class="project-header">
                     <h3 class="project-title">🍯 Rocky Linux 기반 SSH 허니팟 보안 분석 프로젝트</h3>
@@ -317,9 +431,6 @@
                 <div class="project-links">
                     <a href="https://github.com/DeveloperMODE-korea/Rocky-Linux-Honeypot" target="_blank" class="btn-primary">
                         <i class="fab fa-github"></i> GitHub에서 보기
-                    </a>
-                    <a href="#" class="btn-secondary">
-                        <i class="fas fa-external-link-alt"></i> 라이브 데모
                     </a>
                 </div>
             </div>

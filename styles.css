@@ -529,8 +529,137 @@ section:not(.hero) {
 .project-links {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+}
+
+/* Financial Terminal Project Specific Styles */
+.project-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+.project-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.private-badge {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%) !important;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.feature-item i {
+    color: #667eea;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-item span {
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.tech-categories {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tech-category-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 10px;
+    color: #b3b3b3;
+    border-left: 3px solid #667eea;
+}
+
+.tech-category-item strong {
+    color: #667eea;
+}
+
+.challenge-list {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.challenge-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #f39c12;
+}
+
+.challenge-title {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.challenge-title i {
+    color: #f39c12;
+}
+
+.challenge-solution {
+    color: #b3b3b3;
+    line-height: 1.6;
+}
+
+.project-achievements {
+    margin-bottom: 2rem;
+}
+
+.project-achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-achievements li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    color: #b3b3b3;
+    border-left: 3px solid #27ae60;
+}
+
+.private-project {
+    background: rgba(255, 107, 107, 0.2) !important;
+    color: #ff6b6b !important;
+    border: 1px solid rgba(255, 107, 107, 0.3) !important;
+    cursor: not-allowed;
+}
+
+.demo-available {
+    background: rgba(46, 204, 113, 0.2) !important;
+    color: #2ecc71 !important;
+    border: 1px solid rgba(46, 204, 113, 0.3) !important;
 }
 
 /* Experience Section */
@@ -735,6 +864,27 @@ section:not(.hero) {
     .results-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .challenge-list {
+        gap: 0.5rem;
+    }
+
+    .challenge-item {
+        padding: 1rem;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tech-categories {
+        gap: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -756,5 +906,15 @@ section:not(.hero) {
 
     .contact-info {
         grid-template-columns: 1fr;
+    }
+
+    .project-achievements li {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        align-items: center;
     }
 }
