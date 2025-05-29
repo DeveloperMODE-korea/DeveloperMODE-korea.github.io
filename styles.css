@@ -465,6 +465,74 @@ section {
     color: var(--secondary-color);
 }
 
+/* Project Card Enhanced Styles */
+.project-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.feature-item i {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    width: 16px;
+}
+
+.project-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item .stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.stat-item .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+/* Enhanced project card for security project */
+.project-card:first-child {
+    grid-column: 1 / -1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-card:first-child .project-content {
+    padding: 2rem;
+}
+
+.project-card:first-child .project-image {
+    height: 250px;
+}
+
+.project-card:first-child .project-placeholder {
+    font-size: 4rem;
+}
+
 /* Contact Section */
 .contact-content {
     display: grid;
