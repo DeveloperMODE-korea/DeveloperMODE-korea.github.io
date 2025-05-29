@@ -65,7 +65,9 @@ GitHub Pages를 통해 자동 배포됩니다:
 
 - **이메일**: freexxx9206@naver.com
 - **GitHub**: [@DeveloperMODE-korea](https://github.com/DeveloperMODE-korea)
-- **크몽**: 프리랜서 개발자
+- **크몽**: [프리랜서 개발자](https://kmong.com/@StackOverflow)
+- **LinkedIn**: [성주 김](https://www.linkedin.com/in/%EC%84%B1%EC%A3%BC-%EA%B9%80-718a93303/)
+- **기술 블로그**: [Tistory](https://stackoverflow1.tistory.com)
 
 ---
 
