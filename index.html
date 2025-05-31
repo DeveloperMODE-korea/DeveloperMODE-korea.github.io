@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김성주 - 컴퓨터공학과 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Developer MODE</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">홈</a>
+                <a href="#about" class="nav-link">소개</a>
+                <a href="#skills" class="nav-link">기술</a>
+                <a href="#projects" class="nav-link">프로젝트</a>
+                <a href="#experience" class="nav-link">경력</a>
+                <a href="#contact" class="nav-link">연락처</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        안녕하세요! <br>
+                        <span class="highlight">김성주</span>입니다
+                    </h1>
+                    <p class="hero-subtitle">
+                        22세 • 컴퓨터공학과 재학 • 프리랜서 개발자
+                    </p>
+                    <div class="hero-links">
+                        <a href="https://kmong.com/@StackOverflow" target="_blank" class="btn-primary">
+                            <i class="fas fa-chart-bar"></i> 크몽 프로필
+                        </a>
+                        <a href="https://github.com/DeveloperMODE-korea" target="_blank" class="btn-secondary">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-animation">
+                        <div class="code-line"></div>
+                        <div class="code-line"></div>
+                        <div class="code-line"></div>
+                        <div class="code-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        안녕하세요! 컴퓨터공학을 전공하는 22세 대학생입니다. 현재 크몽에서 프리랜서 개발자로 활동하며 
+                        주문제작 프로그램을 개발하고 있습니다. 다양한 기술 스택을 활용하여 클라이언트의 요구사항에 
+                        맞는 맞춤형 솔루션을 제공하는 것을 목표로 하고 있습니다.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">년차 개발 경험</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">프로젝트 완료</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">사용 가능 언어</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React Native</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-typescript"></i>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Database -->
+                <div class="skill-category">
+                    <h3 class="category-title">Backend & Database</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="skill-category">
+                    <h3 class="category-title">Operating Systems</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>CentOS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Rocky Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-windows"></i>
+                            <span>Windows Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-apple"></i>
+                            <span>macOS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">Development Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VSCode</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>IntelliJ</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>PyCharm</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-android"></i>
+                            <span>Android Studio</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Cursor AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security & Analysis Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">Security & Analysis Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Ghidra</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Burp Suite</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>x64dbg</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>IDA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- LLMLIKE Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">🎮 LLMLIKE - Claude AI 기반 텍스트 로그라이크 RPG</h3>
+                    <div class="project-badges">
+                        <span class="badge">React</span>
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">Claude AI</span>
+                    </div>
+                </div>
+                
+                <div class="project-meta">
+                    <span class="project-period">📅 2025년 5월 ~ 현재</span>
+                    <span class="project-team">👤 단독개발 (1인)</span>
+                </div>
+                
+                <p class="project-description">
+                    Claude API를 활용하여 매 턴마다 새로운 스토리와 전투가 동적으로 생성되는 혁신적인 웹 기반 로그라이크 RPG입니다.
+                    완전한 RPG 시스템을 갖춘 이 게임은 AI가 생성하는 무한한 모험을 제공합니다.
+                </p>
+                
+                <div class="project-features">
+                    <h4>✨ 주요 기능</h4>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI 기반 동적 스토리 생성</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>4개 직업 시스템</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-magic"></i>
+                            <span>스킬 & 아이템 시스템</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-save"></i>
+                            <span>자동 저장 기능</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-level-up-alt"></i>
+                            <span>캐릭터 성장 시스템</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-database"></i>
+                            <span>데이터 지속성</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech">
+                    <h4>🛠️ 기술 스택</h4>
+                    <div class="tech-categories">
+                        <div class="tech-category-item">
+                            <strong>프론트엔드:</strong> React 18, TypeScript, Vite, Tailwind CSS
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>백엔드:</strong> Node.js, Express, Prisma ORM
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>데이터베이스:</strong> PostgreSQL
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>인프라:</strong> Docker, Docker Compose, Nginx
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>AI:</strong> Claude 3.5 Haiku (Anthropic API)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-achievements">
+                    <h4>🎯 주요 구현 사항</h4>
+                    <ul>
+                        <li>🤖 Claude API 통합으로 무한한 게임 콘텐츠 생성</li>
+                        <li>🎮 완전한 RPG 시스템 (레벨업, 스킬, 아이템)</li>
+                        <li>💾 Docker 기반 마이크로서비스 아키텍처</li>
+                        <li>🔄 실시간 게임 상태 관리 및 자동 저장</li>
+                        <li>📱 반응형 웹 디자인으로 모바일 지원</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/DeveloperMODE-korea/LLMLIKE" target="_blank" class="btn-primary">
+                        <i class="fab fa-github"></i> GitHub에서 보기
+                    </a>
+                </div>
+            </div>
+
+            <!-- Financial Terminal Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">🏦 Python 기반 금융 터미널 프로젝트</h3>
+                    <div class="project-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">PyQt5</span>
+                        <span class="badge">FinTech</span>
+                        <span class="badge">Real-time</span>
+                    </div>
+                </div>
+                
+                <div class="project-meta">
+                    <span class="project-period">📅 2025년 4월 ~ 현재 진행중</span>
+                    <span class="project-team">👤 단독개발 (1인)</span>
+                </div>
+                
+                <p class="project-description">
+                    Bloomberg Terminal의 고비용 문제를 해결하기 위한 미니 금융 터미널 개발. 
+                    실시간 주식 데이터, 경제 지표, 옵션 분석 등 다양한 금융 정보를 통합 제공하는 데스크톱 애플리케이션입니다.
+                </p>
+                
+                <div class="project-features">
+                    <h4>✨ 주요 기능</h4>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>실시간 주식 모니터링</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>경제 캘린더</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>금융 지표 대시보드</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-building"></i>
+                            <span>기업 분석</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-coins"></i>
+                            <span>옵션 데이터</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>초보자 가이드</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech">
+                    <h4>🛠️ 기술 스택</h4>
+                    <div class="tech-categories">
+                        <div class="tech-category-item">
+                            <strong>Frontend & UI:</strong> PyQt5, PyQtWebEngine, Matplotlib
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>Data Processing:</strong> Pandas, NumPy
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>Web Crawling:</strong> Playwright, Requests, BeautifulSoup4
+                        </div>
+                        <div class="tech-category-item">
+                            <strong>Financial APIs:</strong> yfinance, fredapi, Fear-and-Greed API
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-challenges">
+                    <h4>🔧 주요 기술적 도전과 해결책</h4>
+                    <div class="challenge-list">
+                        <div class="challenge-item">
+                            <div class="challenge-title">📊 yfinance 데이터와 TradingView 위젯 연동</div>
+                            <div class="challenge-solution">PyQt5 멀티스레딩과 경량화된 차트 라이브러리 통합으로 UI 블로킹 방지</div>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-title">💰 버핏지수 계산 (FRED API 데이터 제거 대응)</div>
+                            <div class="challenge-solution">Google Finance 웹 크롤링과 다중 데이터 소스 전략으로 대체</div>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-title">📅 경제 캘린더 실시간 크롤링</div>
+                            <div class="challenge-solution">Playwright 동적 크롤링과 견고한 HTML 파싱 전략 구현</div>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-title">💾 API 호출 비용 최적화</div>
+                            <div class="challenge-solution">계층적 캐시 시스템과 스마트 캐시 전략으로 성능 향상</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-achievements">
+                    <h4>🎯 성과 및 특징</h4>
+                    <ul>
+                        <li>🔄 멀티스레딩 구조로 비동기 처리 및 UI 반응성 확보</li>
+                        <li>💾 데이터 캐싱으로 API 호출 최적화 (최대 80% 응답 시간 단축)</li>
+                        <li>⏱️ 실시간 업데이트와 사용자 정의 갱신 주기</li>
+                        <li>🌐 한글/영어 다국어 지원 및 지역화</li>
+                        <li>🎨 Bloomberg 스타일 다크 테마와 직관적 UI</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/DeveloperMODE-korea/DeveloperMODE_Financial-Terminal" target="_blank" class="btn-primary">
+                        <i class="fab fa-github"></i> GitHub에서 보기
+                    </a>
+                    <div class="btn-secondary demo-available">
+                        <i class="fas fa-desktop"></i> 데모 가능
+                    </div>
+                    <a href="https://stackoverflow1.tistory.com/entry/%EA%B8%88%EC%9C%B5-%ED%84%B0%EB%AF%B8%EB%84%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" target="_blank" class="btn-primary">
+                        <i class="fab fa-blogger"></i> 블로그에서 자세히 보기
+                    </a>
+                </div>
+            </div>
+
+            <!-- Honeypot Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">🍯 Rocky Linux 기반 SSH 허니팟 보안 분석 프로젝트</h3>
+                    <div class="project-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">Rocky Linux</span>
+                        <span class="badge">Security</span>
+                        <span class="badge">Honeypot</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Rocky Linux 9.5 환경에서 Cowrie SSH 허니팟을 구축하고, Kali Linux를 이용한 실제 침투 시나리오를 시연하여 
+                    사이버 보안 위협의 탐지 및 분석 능력을 실증하는 프로젝트입니다.
+                </p>
+                
+                <div class="project-features">
+                    <h4>🎯 주요 목표</h4>
+                    <ul>
+                        <li>프로액티브 보안: 실제 공격을 유도하여 새로운 위협 패턴 발견</li>
+                        <li>위협 인텔리전스: 공격자 행동 분석을 통한 보안 룰셋 강화</li>
+                        <li>조기 경보 시스템: 실제 시스템 침해 전 공격 징후 탐지</li>
+                        <li>교육적 효과: 실전형 보안 시나리오를 통한 학습 효과 극대화</li>
+                    </ul>
+                </div>
+
+                <div class="project-tech">
+                    <h4>🖥️ 기술 스택</h4>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <strong>OS:</strong> Rocky Linux 9.5
+                        </div>
+                        <div class="tech-item">
+                            <strong>가상화:</strong> VMware Workstation Pro
+                        </div>
+                        <div class="tech-item">
+                            <strong>허니팟:</strong> Cowrie (Medium-Interaction)
+                        </div>
+                        <div class="tech-item">
+                            <strong>언어:</strong> Python 3.x
+                        </div>
+                        <div class="tech-item">
+                            <strong>공격 도구:</strong> Kali Linux, Nmap, Hydra
+                        </div>
+                        <div class="tech-item">
+                            <strong>분석:</strong> MITRE ATT&CK Framework
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-results">
+                    <h4>📊 분석 결과</h4>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-number">150+</span>
+                            <span class="result-label">탐지된 공격 세션</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">1,200+</span>
+                            <span class="result-label">차단된 브루트포스 시도</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">50+</span>
+                            <span class="result-label">수집된 악성 명령어</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">25+</span>
+                            <span class="result-label">생성된 IOC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/DeveloperMODE-korea/Rocky-Linux-Honeypot" target="_blank" class="btn-primary">
+                        <i class="fab fa-github"></i> GitHub에서 보기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Career & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">크몽 IT/프로그래밍 프리랜서</h3>
+                        <span class="timeline-date">2025.03 ~ 현재</span>
+                        <p class="timeline-description">주문제작 프로그램 개발 및 IT 솔루션 제공</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">전문대학교 컴퓨터공학과</h3>
+                        <span class="timeline-date">2024.03 ~ 재학중</span>
+                        <p class="timeline-description">컴퓨터공학 전공 과정 이수 중</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>freexxx9206@naver.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>@DeveloperMODE-korea</p>
+                        </div>
+                    </div>
+                    <a href="https://www.linkedin.com/in/%EC%84%B1%EC%A3%BC-%EA%B9%80-718a93303/" target="_blank" class="contact-item contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>성주 김</p>
+                        </div>
+                    </a>
+                    <a href="https://kmong.com/@StackOverflow" target="_blank" class="contact-item contact-link">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>
+                            <h3>크몽</h3>
+                            <p>프리랜서 개발자</p>
+                        </div>
+                    </a>
+                    <a href="https://stackoverflow1.tistory.com" target="_blank" class="contact-item contact-link">
+                        <i class="fab fa-blogger"></i>
+                        <div>
+                            <h3>Tistory Blog</h3>
+                            <p>기술 블로그</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Computer Engineering Student Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
