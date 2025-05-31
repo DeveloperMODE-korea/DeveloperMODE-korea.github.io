@@ -28,6 +28,12 @@
 
 ### 주요 프로젝트
 
+#### LLMLIKE 텍스트 로그라이크 웹 게임
+- **GitHub**: [LLMLIKE](https://github.com/DeveloperMODE-korea/LLMLIKE)
+- **기술**: React 18, TypeScript, Vite, Tailwind CSS,Node.js, Express, Prisma ORM, PostgreSQL, Docker, Docker Compose, Nginx
+- **기능**: AI 기반 동적 스토리 생성, 4개 직업 시스템, 스킬 & 아이템 시스템, 자동 저장 기능, 캐릭터 성장 시스템, 데이터 지속성
+
+
 #### 🚀 Bloomberg 스타일 금융 터미널
 - **GitHub**: [DeveloperMODE_Financial-Terminal](https://github.com/DeveloperMODE-korea/DeveloperMODE_Financial-Terminal)
 - **기술**: Python, PyQt5, yfinance, FRED API, Playwright
